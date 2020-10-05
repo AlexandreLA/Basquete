@@ -1,0 +1,60 @@
+﻿@model TemporadaDeBasquete.Models.RegistroJogo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="container-fluid">
+    <h1>Edit</h1>
+
+    <h4>RegistroJogo</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Placar" class="control-label"></label>
+                    <input asp-for="Placar" class="form-control" />
+                    <span asp-validation-for="Placar" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MinimoTemporada" class="control-label"></label>
+                    <input asp-for="MinimoTemporada" class="form-control" />
+                    <span asp-validation-for="MinimoTemporada" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MaximoTemporada" class="control-label"></label>
+                    <input asp-for="MaximoTemporada" class="form-control" />
+                    <span asp-validation-for="MaximoTemporada" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="QuebraRecordeMaximo" class="control-label"></label>
+                    <input asp-for="QuebraRecordeMaximo" class="form-control" />
+                    <span asp-validation-for="QuebraRecordeMaximo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="QuebraRecordeMinimo" class="control-label"></label>
+                    <input asp-for="QuebraRecordeMinimo" class="form-control" />
+                    <span asp-validation-for="QuebraRecordeMinimo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TemporadaId" class="control-label"></label>
+                    <input asp-for="TemporadaId" class="form-control" />
+                    <span asp-validation-for="TemporadaId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</div>

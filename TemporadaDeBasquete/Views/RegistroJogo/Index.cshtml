@@ -1,0 +1,72 @@
+﻿@model IEnumerable<TemporadaDeBasquete.Models.RegistroJogo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid">
+    <h1>Jogadora Maria</h1>
+
+    <p>
+        <a asp-action="Create">Registrar Placar</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumeroJogo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TemporadaId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Placar)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MinimoTemporada)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaximoTemporada)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuebraRecordeMaximo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuebraRecordeMinimo)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroJogo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Temporada.TemporadaDescricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Placar)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MinimoTemporada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaximoTemporada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuebraRecordeMaximo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuebraRecordeMinimo)
+                </td>
+                <td>                  
+                    <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

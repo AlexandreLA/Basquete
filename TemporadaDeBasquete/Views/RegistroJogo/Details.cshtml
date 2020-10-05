@@ -1,0 +1,56 @@
+﻿@model TemporadaDeBasquete.Models.RegistroJogo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container-fluid">
+    <h1>Detalhes</h1>
+
+    <div>
+        <h4>RegistroJogo</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Placar)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Placar)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MinimoTemporada)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MinimoTemporada)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MaximoTemporada)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MaximoTemporada)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.QuebraRecordeMaximo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.QuebraRecordeMaximo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.QuebraRecordeMinimo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.QuebraRecordeMinimo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TemporadaId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Temporada.TemporadaDescricao)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
