@@ -158,7 +158,7 @@ namespace TemporadaDeBasquete.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Placar,DataJogo,MinimoTemporada,MaximoTemporada,QuebraRecordeMaximo,QuebraRecordeMinimo,TemporadaId")] RegistroJogo registroJogo)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Placar,MinimoTemporada,MaximoTemporada,QuebraRecordeMaximo,QuebraRecordeMinimo,TemporadaId")] RegistroJogo registroJogo)
         {
             if (id != registroJogo.Id)
             {
