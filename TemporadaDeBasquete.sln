@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemporadaDeBasquete", "TemporadaDeBasquete\TemporadaDeBasquete.csproj", "{031A59D7-8283-4D61-B874-137DDD7D070B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemporadaDeBasquete.Tests", "TemporadaDeBasquete.Tests\TemporadaDeBasquete.Tests.csproj", "{56CBFD0F-295F-4914-ABA1-197429A94ABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{031A59D7-8283-4D61-B874-137DDD7D070B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{031A59D7-8283-4D61-B874-137DDD7D070B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{031A59D7-8283-4D61-B874-137DDD7D070B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CBFD0F-295F-4914-ABA1-197429A94ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CBFD0F-295F-4914-ABA1-197429A94ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CBFD0F-295F-4914-ABA1-197429A94ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CBFD0F-295F-4914-ABA1-197429A94ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
